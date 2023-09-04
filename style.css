@@ -11,7 +11,7 @@ body{
   margin-right: 190px;
   display: flex;
   justify-content: space-between;
-  overflow: hidden;
+  /*overflow: hidden;*/
   position: relative;
 }
 .topnav::before {
