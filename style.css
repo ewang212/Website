@@ -322,7 +322,7 @@ p.info1 {
 }
 @media only screen and (max-width: 768px) {
     /* Simplified margins */
-    .links, .parts, .parts1, .project-parts, .project-parts2, .litmage1, .descriptions1 {
+    .parts, .parts1, .project-parts, .project-parts2, .litmage1, .descriptions1 {
         margin-left: 20px;
         margin-right: 20px;
     }
@@ -330,6 +330,7 @@ p.info1 {
     /* Adjusting font sizes */
     .topnav a {
         font-size: 20px;
+        padding: 7px 0; /* Adjust padding to ensure they fit within the viewport */
     }
 
     .text-block p.para {
@@ -350,8 +351,8 @@ p.info1 {
         margin-left: 2.5%; /* centers the image */
     }
 
-    /* Adjusting flex layouts */
-    .links, .parts, .parts1, .project-parts, .project-parts2 {
+    /* Adjusting flex layouts for other sections */
+    .parts, .parts1, .project-parts, .project-parts2 {
         flex-direction: column;
     }
 
