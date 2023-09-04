@@ -320,3 +320,60 @@ p.info1 {
 .descriptions:hover, .descriptions1:hover,  .litmage:hover, .litmage1:hover {
     border-color: black; /* Slightly lighter color on hover; adjust as needed */
 }
+@media only screen and (max-width: 768px) {
+    /* Simplified margins */
+    .links, .parts, .parts1, .project-parts, .project-parts2, .litmage1, .descriptions1 {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    /* Adjusting font sizes */
+    .topnav a {
+        font-size: 20px;
+    }
+
+    .text-block p.para {
+        font-size: 16px;
+    }
+
+    .text-block p.heading, .hi p {
+        font-size: 24px;
+    }
+
+    .exp {
+        font-size: 20px;
+    }
+
+    /* Adjusting image widths */
+    body img, .litmage, .litmage1 {
+        width: 95%;
+        margin-left: 2.5%; /* centers the image */
+    }
+
+    /* Adjusting flex layouts */
+    .links, .parts, .parts1, .project-parts, .project-parts2 {
+        flex-direction: column;
+    }
+
+    /* Reducing text-indentation */
+    .text-block p.para {
+        text-indent: 20px;
+    }
+
+    /* Input and textarea adjustments */
+    input, textarea {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .send {
+        margin-left: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Removing or adjusting negative margins */
+    p.info, p.info1 {
+        margin-left: 0;
+    }
+}
