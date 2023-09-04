@@ -322,7 +322,7 @@ p.info1 {
 }
 @media only screen and (max-width: 768px) {
     /* Simplified margins */
-    .parts, .parts1, .project-parts, .project-parts2, .litmage1, .descriptions1 {
+    .parts, .parts1, .litmage1, .descriptions1 {
         margin-left: 20px;
         margin-right: 20px;
     }
@@ -376,5 +376,14 @@ p.info1 {
     /* Removing or adjusting negative margins */
     p.info, p.info1 {
         margin-left: 0;
+    }
+  .projects-container {
+        flex-direction: column;
+    }
+
+    .project-parts, .project-parts2 {
+        margin-left: 20px;
+        margin-right: 20px;
+        width: 100%; /* Take up the full width */
     }
 }
