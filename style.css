@@ -14,6 +14,13 @@ body{
   /*overflow: hidden;*/
   position: relative;
 }
+.topnav {
+    display: flex;         /* Ensures flexbox for direct children */
+    justify-content: center;  /* Horizontally center the links */
+    align-items: center;      /* Vertically center the links */
+    background-color: lightblue;  /* temporary for checking */
+}
+
 .topnav::before {
     content: "";  /* Necessary for the pseudo-element to be displayed */
     display: block;
@@ -23,6 +30,7 @@ body{
     background-color: grey;  /* Adjust the color of the line */
     margin-bottom: 0px;  /* Provides spacing between the line and the content inside .topnav */
 }
+
 .pre-topnav-icon {
     display: block;
     width: 50px; /* Adjust size as needed */
@@ -320,6 +328,10 @@ p.info1 {
 .descriptions:hover, .descriptions1:hover,  .litmage:hover, .litmage1:hover {
     border-color: black; /* Slightly lighter color on hover; adjust as needed */
 }
+.topnav, .topnav * {
+    visibility: visible;
+    opacity: 1;
+}
 @media only screen and (max-width: 768px) {
     /* Simplified margins */
     .parts, .parts1, .litmage1, .descriptions1 {
@@ -372,9 +384,7 @@ p.info1 {
         width: 100%;
         text-align: center;
     }
-    .links {
-        display: flex;
-    }
+
     /* Removing or adjusting negative margins */
     p.info, p.info1 {
         margin-left: 0;
