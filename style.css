@@ -11,16 +11,9 @@ body{
   margin-right: 190px;
   display: flex;
   justify-content: space-between;
-  /*overflow: hidden;*/
+  overflow: hidden;
   position: relative;
 }
-.topnav {
-    display: flex;         /* Ensures flexbox for direct children */
-    justify-content: center;  /* Horizontally center the links */
-    align-items: center;      /* Vertically center the links */
-    background-color: lightblue;  /* temporary for checking */
-}
-
 .topnav::before {
     content: "";  /* Necessary for the pseudo-element to be displayed */
     display: block;
@@ -30,7 +23,6 @@ body{
     background-color: grey;  /* Adjust the color of the line */
     margin-bottom: 0px;  /* Provides spacing between the line and the content inside .topnav */
 }
-
 .pre-topnav-icon {
     display: block;
     width: 50px; /* Adjust size as needed */
@@ -327,75 +319,4 @@ p.info1 {
 }
 .descriptions:hover, .descriptions1:hover,  .litmage:hover, .litmage1:hover {
     border-color: black; /* Slightly lighter color on hover; adjust as needed */
-}
-.topnav, .topnav * {
-    visibility: visible;
-    opacity: 1;
-}
-@media only screen and (max-width: 768px) {
-    /* Simplified margins */
-    .parts, .parts1, .litmage1, .descriptions1 {
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-
-    /* Adjusting font sizes */
-    .topnav a {
-        font-size: 20px;
-        padding: 7px 0; /* Adjust padding to ensure they fit within the viewport */
-    }
-
-    .text-block p.para {
-        font-size: 16px;
-    }
-
-    .text-block p.heading, .hi p {
-        font-size: 24px;
-    }
-
-    .exp {
-        font-size: 20px;
-    }
-
-    /* Adjusting image widths */
-    body img, .litmage, .litmage1 {
-        width: 95%;
-        margin-left: 2.5%; /* centers the image */
-    }
-
-    /* Adjusting flex layouts for other sections */
-    .parts, .parts1, .project-parts, .project-parts2 {
-        flex-direction: column;
-    }
-
-    /* Reducing text-indentation */
-    .text-block p.para {
-        text-indent: 20px;
-    }
-
-    /* Input and textarea adjustments */
-    input, textarea {
-        margin-left: 0;
-        width: 100%;
-    }
-
-    .send {
-        margin-left: 0;
-        width: 100%;
-        text-align: center;
-    }
-
-    /* Removing or adjusting negative margins */
-    p.info, p.info1 {
-        margin-left: 0;
-    }
-  .projects-container {
-        flex-direction: column;
-    }
-
-    .project-parts, .project-parts2 {
-        margin-left: 20px;
-        margin-right: 20px;
-        width: 100%; /* Take up the full width */
-    }
 }
