@@ -1,0 +1,322 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+body{
+  font-family:"Garamond", serif;
+}
+.links {
+  padding-top: 0px;
+  margin-left: 190px;
+  margin-right: 190px;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  position: relative;
+}
+.topnav::before {
+    content: "";  /* Necessary for the pseudo-element to be displayed */
+    display: block;
+    margin-left: 150px;
+    margin-right: 150px;
+    height: 1.5px;  /* Adjust the thickness of the line as needed */
+    background-color: grey;  /* Adjust the color of the line */
+    margin-bottom: 0px;  /* Provides spacing between the line and the content inside .topnav */
+}
+.pre-topnav-icon {
+    display: block;
+    width: 50px; /* Adjust size as needed */
+    height: 50px; /* Adjust size as needed */
+    margin: 20px auto 30px ; /* Center the icon and adjust the space between it and the topnav */
+}
+.topnav a{
+  text-decoration: none;
+  color: gray;
+  font-size: 30px;
+  font-family: Quicksand, sans-serif;
+  padding: 14px 0;
+  overflow: hidden;
+  /* line under */
+  border-bottom: 2.5px solid white;
+  padding-bottom: 2px;
+  transition: border-color 0.3s;
+}
+body img {
+  margin-top: -10px;
+  padding-top: 70px;
+  margin-left: 160px;
+  width: 700px;
+  height: auto;
+}
+
+.topnav a:hover{
+  border-bottom-color: black;
+}
+
+.image-overlay img {
+  display: block; 
+  max-width: 100%; 
+  margin-top: 50px;
+  padding-top: 0;
+  border: 1.5px solid lightgray;
+  border-radius: 10px;
+}
+
+.image-overlay img:hover{
+  border-color: black;
+}
+
+.text-block {
+  border-radius: 10px;
+  border: solid lightgrey;
+  position: absolute; 
+  top: 55%;
+  left: 50%;
+  width: 35%;
+  margin-right: 160px;
+  background-color: white;
+  padding: 30px; /* spacing inside the white block */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* optional: to give a slight shadow for a lifted effect */
+}
+
+.text-block:hover {
+    border-color: black; /* optional: slightly darker green on hover */
+}
+
+.text-block p.para {
+  text-indent: 30px;
+  font-family: Quicksand, sans-serif;
+  font-size: 20px;
+  margin: 0; /* to remove default margins */
+}
+.text-block p.heading {
+  font-size: 30px;
+  font-family: Quicksand, sans-serif;
+  margin-top: 0; /* Ensure there's no margin at the top */
+  margin-bottom: 10px;
+  text-align: center
+}
+/*contact me*/
+.contact-container {
+    margin-top: 40px;
+    display: flex;          /* Enable flexbox layout */
+    align-items: flex-start;    /* Vertically align items in the center */
+    gap: 20px;              /* Space between the "Contact Me" text and the form */
+}
+.hi p{
+  margin-top: 0px;
+  font-weight: bold;
+  font-family: Quicksand, sans-serif;
+  font-size: 30px;
+  margin-left: 150px;
+  margin-bottom: 5px; /* Adjust this value as needed */
+}
+.mail {
+  text-decoration: none;
+  color: gray;
+  margin-top: 20px; /* Adjust this value as needed */
+  display: block; /* Makes the anchor tag block level to occupy full width and accept margin settings effectively */
+  margin-left: 150px;
+  font-size: 20px;
+  font-family: Quicksand, sans-serif;
+}
+form {
+  margin-right: 150px;
+}
+input, textarea {
+        border: none;
+        font-family: Quicksand, sans-serif;
+        border-bottom: 2px solid gray;
+        padding-bottom: 10px;
+        width: 100%;
+        margin-top: 20px;
+        margin-left: 300px;
+        display: block;
+        margin-bottom: 10px; /* Optional: Adds some space between inputs */
+    }
+
+/*form */
+.exp {
+  margin-left: 300px;
+  font-size: 25px;
+  font-family: Quicksand, sans-serif;
+}
+
+.send {
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+    border: 1.5px solid lightgray;
+    font-size: 30px;  /* adjust as per your needs */
+    background-color: white; /* Color of the button; adjust as needed */
+    color: black; /* Text color; adjust as needed */
+    border-radius: 10px; /* optional: for rounded corners */
+    padding: 10px 20px; /* top/bottom and left/right padding */
+    transition: background-color 0.3s, border-color 0.3s; /* optional: smooth color transition on hover */
+}
+
+.send:hover {
+    border-color: black; /* optional: slightly darker green on hover */
+}
+
+/* Research */
+.parts, .parts1 {
+  margin-top: 20px;
+  border: solid lightgray;
+  padding: 10px;
+  margin-left: 150px;
+  margin-right: 150px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+}
+.parts1 {
+  margin-top: 50px;
+}
+.parts:hover, .parts1:hover {
+  border-color: black;  /* set the border color to black when hovered */
+}
+.location{
+  font-size: 15px;
+  margin-right: 0px;
+  text-decoration: none;
+  color: black;
+}
+.NASA .location {
+  margin-left: 385px;
+}
+.Rosenthal .location {
+  margin-left: 480px;
+}
+.Corpus .location {
+  margin-left: 360px;
+}
+.Kingsville .location {
+  margin-left: 485px;
+}
+.NASA .year {
+  margin-left: 545px;
+}
+.Rosenthal .year {
+  margin-left: 515px;
+}
+.Corpus .year {
+  margin-left: 500px;
+}
+.Kingsville .year {
+  margin-left: 565px;
+}
+.Kingsville .location, .Kingsville .year, .Corpus .year, .Rosenthal .year, .NASA .year{
+    pointer-events: none; /* Disables the link functionality */
+    cursor: default; /* Makes sure the cursor doesn't change on hover */
+    text-decoration: none;
+    color: black;
+}
+p.info, p.info1 {
+  margin-left: -550px;
+  margin-right: 150px;
+  color: red;
+}
+p.info1 {
+  margin-top: 200px;
+}
+.additional-info p {
+    margin-top: 0px; /* or any desired value for spacing */
+    margin-left: 30px;
+    margin-right: 0;
+}
+.paper-button {
+    display: inline-block;
+    border: 1.5px solid gray;
+    padding: 10px 20px;
+    background-color: white; /* Color of the button; adjust as needed */
+    color: black; /* Text color; adjust as needed */
+    border-radius: 10px; /* Rounded corners; adjust as needed */
+    text-decoration: none;
+    transition: background-color 0.3s, border-color 0.3s;
+    margin-left: 30px;
+    margin-top: 5px; /* Space above the button; adjust as needed */
+}
+
+.paper-button:hover {
+    border-color: black; /* Slightly lighter color on hover; adjust as needed */
+}
+
+/*projects*/
+.projects-container {
+  display: flex;
+  justify-content: flex-start; /* This will give equal space between the two project parts */
+}
+
+/* Optional: If you want some gap between the two blocks */
+.project-parts, .project-parts2 {
+  flex: 1; /* This ensures both take up equal space */
+  margin-top: 20px;
+  border: solid lightgray;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+}
+
+.project-parts {
+  margin-top: 50px;
+  margin-left: 150px;
+  margin-right: 20px;
+}
+.project-parts2 {
+  margin-top: 50px;
+  margin-left: 10px;
+  margin-right: 150px;
+}
+
+.project-parts:hover, .project-parts2:hover {
+  border-color: black;  /* set the border color to black when hovered */
+}
+
+/*literature*/
+.image-section {
+    display: inline-block; /* This makes the sections side by side */
+    vertical-align: top;  /* This ensures they align at the top */
+    margin-right: 20px;   /* Optional: Add some space between each section */
+}
+
+.litmage {
+  display: block; /* This ensures the image takes the full width of its container */
+  margin: 0 auto;
+  margin-top: 50px;
+  padding-top: 0;
+  width: 300px;
+  height: 400px;
+  border: 1.5px solid lightgray;
+  border-radius: 10px;
+}
+.litmage1 {
+  display: block; /* This ensures the image takes the full width of its container */
+  margin-left: 150px;
+  margin-top: 50px;
+  padding-top: 0;
+  width: 300px;
+  height: 400px;
+  border: 1.5px solid lightgray;
+  border-radius: 10px;
+}
+.descriptions, .descriptions1 {
+    text-align: center;
+    display: block;
+    border: 1.5px solid lightgray;
+    padding: 10px 20px;
+    background-color: white; /* Color of the button; adjust as needed */
+    color: black; /* Text color; adjust as needed */
+    border-radius: 10px; /* Rounded corners; adjust as needed */
+    text-decoration: none;
+    transition: background-color 0.3s, border-color 0.3s;
+    margin-top: 10px; /* Space above the button; adjust as needed */
+}
+
+.descriptions1 {
+  margin-left: 150px;
+}
+.descriptions:hover, .descriptions1:hover,  .litmage:hover, .litmage1:hover {
+    border-color: black; /* Slightly lighter color on hover; adjust as needed */
+}
