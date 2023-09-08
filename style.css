@@ -92,16 +92,9 @@ body img {
 .text-block p.heading {
   font-size: 30px;
   font-family: Quicksand, sans-serif;
-  margin-top: 0; /* Ensure there's no margin at the top */
+  margin-top: 0px; /* Ensure there's no margin at the top */
   margin-bottom: 10px;
   text-align: center
-}
-/*contact me*/
-.contact-container {
-    margin-top: 40px;
-    display: flex;          /* Enable flexbox layout */
-    align-items: flex-start;    /* Vertically align items in the center */
-    gap: 20px;              /* Space between the "Contact Me" text and the form */
 }
 .hi p{
   margin-top: 0px;
@@ -110,6 +103,9 @@ body img {
   font-size: 30px;
   margin-left: 150px;
   margin-bottom: 5px; /* Adjust this value as needed */
+}
+.hi .con {
+  margin-top: 50px;
 }
 .mail {
   text-decoration: none;
@@ -120,43 +116,13 @@ body img {
   font-size: 20px;
   font-family: Quicksand, sans-serif;
 }
-form {
-  margin-right: 150px;
-}
-input, textarea {
-        border: none;
-        font-family: Quicksand, sans-serif;
-        border-bottom: 2px solid gray;
-        padding-bottom: 10px;
-        width: 100%;
-        margin-top: 20px;
-        margin-left: 300px;
-        display: block;
-        margin-bottom: 10px; /* Optional: Adds some space between inputs */
-    }
 
-/*form */
-.exp {
-  margin-left: 300px;
-  font-size: 25px;
+p.number {
+  color: gray;
+  font-weight: normal;
+  margin-left: 150px;
+  font-size: 20px;
   font-family: Quicksand, sans-serif;
-}
-
-.send {
-    display: block;
-    margin-top: 10px;
-    text-align: center;
-    border: 1.5px solid lightgray;
-    font-size: 30px;  /* adjust as per your needs */
-    background-color: white; /* Color of the button; adjust as needed */
-    color: black; /* Text color; adjust as needed */
-    border-radius: 10px; /* optional: for rounded corners */
-    padding: 10px 20px; /* top/bottom and left/right padding */
-    transition: background-color 0.3s, border-color 0.3s; /* optional: smooth color transition on hover */
-}
-
-.send:hover {
-    border-color: black; /* optional: slightly darker green on hover */
 }
 
 /* Research */
